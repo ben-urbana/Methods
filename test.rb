@@ -47,6 +47,9 @@ describe 'Methods2' do
 		it 'should detirmine if the sum of one pair is 10 greater than one of the other pairs' do
 			ticket(11,1,1).must_equal(5)
 		end
+		it 'should detirmine if neither of these happen' do
+			ticket(4,3,5).must_equal(0)
+		end
 	end
 
 
