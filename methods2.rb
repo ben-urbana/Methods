@@ -38,14 +38,26 @@ end
 
 # TODO - write successful_squirrel_party?
 def successful_squirrel_party (nuts, is_weekend)
-	if !is_weekend && nuts.between?(40, 60) == true
+	if is_weekend == false && nuts.between?(40, 60) == true
 		return true
-	elsif is_weekend && nuts >= 40
+	elsif is_weekend == true && nuts >= 40
 		return true
 	else
 		return false
 	end
 end
+
+def ticket (a, b, c)
+	if a * b == 10 || b * c == 10 || a * c == 10
+		return 10
+	elsif (a * b) - (b * c) == 10 || (a * b) - (a * c) == 10
+		return 5
+	else
+		return 0
+	end
+end
+
+
 
 # TODO - write ticket
 
