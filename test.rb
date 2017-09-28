@@ -52,6 +52,17 @@ describe 'Methods2' do
 		end
 	end
 
+	describe 'in_order' do
+		it 'should detirmine if b is bigger than a, and c bigger than b' do
+			in_order(2,5,10,true).must_equal(true)
+		end
+		it 'should detirmine if a is bigger than b, and c is bigger than a but bOK is true' do
+			in_order(5,2,10,true).must_equal(true)
+		end
+		it 'should determine if none are true' do
+			in_order(10,5,2,false).must_equal(false)
+		end
+	end
 
   # TODO - write tests for each method in methods2.rb
 
