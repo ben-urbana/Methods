@@ -99,7 +99,19 @@ def fizz_string (string)
 end
 
 # TODO - write first_last_six?
+def first_last_six (list)
+	if list[0] == 6 || list[list.length - 1] == 6
+		return true
+	else
+		return false
+	end
+end
 
 # TODO - write rotate_left
+def rotate_left (trio)
+	trio[0] = trio[2]
+	trio[1] = trio[0]
+	trio[2] = trio[1]
+end
 
 # TODO - write double23?

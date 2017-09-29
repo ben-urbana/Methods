@@ -94,6 +94,22 @@ describe 'Methods2' do
 		end
 	end
 
+	describe 'first_last_six' do
+		it 'should determine if first or last number is six' do
+			first_last_six([1,2,5,3,6]).must_equal(true)
+		end
+		it 'should return false if not' do
+			first_last_six([1,2,3,4,5,7,8,9]).must_equal(false)
+		end
+	end
+
+	describe 'rotate_left' do
+		it 'should move the integers to the left' do
+			rotate_left([1,2,3]).must_equal([2,3,1])
+		end
+	end
+
+
   # TODO - write tests for each method in methods2.rb
 
 end
