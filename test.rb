@@ -79,6 +79,21 @@ describe 'Methods2' do
 		end
 	end
 
+	describe 'fizz_string' do
+		it 'should determine if the first letter is an f' do
+			fizz_string('fun').must_equal('Fizz')
+		end
+		it 'should determine if the last letter is a b' do
+			fizz_string('bob').must_equal('Buzz')
+		end
+		it 'should determine if the word starts with f and ends with b' do
+			fizz_string('foob').must_equal('FizzBuzz')
+		end
+		it 'should determine if neither of these are true' do
+			fizz_string('lock').must_equal('lock')
+		end
+	end
+
   # TODO - write tests for each method in methods2.rb
 
 end

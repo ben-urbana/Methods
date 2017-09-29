@@ -86,6 +86,17 @@ end
 		
 
 # TODO - write fizz_string
+def fizz_string (string)
+	if string[0].downcase == 'f' && string[string.length - 1].downcase == 'b'
+		return 'FizzBuzz'
+	elsif string[0].downcase == 'f'
+		return 'Fizz'
+	elsif string[string.length - 1].downcase == 'b'
+		return 'Buzz'
+	else
+		return string
+	end
+end
 
 # TODO - write first_last_six?
 
