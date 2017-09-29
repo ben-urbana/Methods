@@ -109,7 +109,17 @@ describe 'Methods2' do
 		end
 	end
 
-
+	describe 'double23' do
+		it 'should determine if the array has multiple twos' do
+			double23([2,2,3,4]).must_equal(true)
+		end
+		it 'should determine if the array has multiple threes' do
+			double23([3,2,3,4]).must_equal(true)
+		end
+		it 'should determine if the array has no multiples' do
+			double23([1,2,3,4]).must_equal(false)
+		end
+	end
   # TODO - write tests for each method in methods2.rb
 
 end

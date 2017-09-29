@@ -121,11 +121,9 @@ def double23 (list)
 	list.each do |ints|
 		if ints == 3 
 			threes += 1
-			return threes
 		end
 		if ints == 2
 			twos += 1
-			return twos
 		end
 	end
 	if twos > 1 
