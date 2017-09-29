@@ -109,9 +109,30 @@ end
 
 # TODO - write rotate_left
 def rotate_left (trio)
-	trio[0] = trio[2]
-	trio[1] = trio[0]
-	trio[2] = trio[1]
+	trio << trio[0]
+	trio.shift
+	return trio
 end
 
 # TODO - write double23?
+def double23 (list)
+	threes = 0
+	twos = 0
+	list.each do |ints|
+		if ints == 3 
+			threes += 1
+			return threes
+		end
+		if ints == 2
+			twos += 1
+			return twos
+		end
+	end
+	if twos > 1 
+		return true
+	elsif threes > 1
+		return true
+	else
+		return false
+	end
+end
