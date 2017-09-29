@@ -64,6 +64,21 @@ describe 'Methods2' do
 		end
 	end
 
+	describe 'less_by_ten' do
+		it 'should determine if the difference between a and b is 10' do
+			less_by_ten(1,11,2).must_equal(true)
+		end
+		it 'should determine if the difference between a and c is 10' do
+			less_by_ten(1,2,11).must_equal(true)
+		end
+		it 'should determine if the difference between b and c is 10' do
+			less_by_ten(2,1,11).must_equal(true)
+		end
+		it 'should determine if the difference between any of them is not 10' do
+			less_by_ten(1,2,3).must_equal(false)
+		end
+	end
+
   # TODO - write tests for each method in methods2.rb
 
 end
